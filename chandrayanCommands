@@ -20,6 +20,33 @@ public static void main(String[] args) {
         int numberOfTestCases=sc.nextInt();
 
         while(numberOfTestCases>0){
+
+        System.out.println("Enter 3 coordinates");
+        
+        System.out.println("X coordinate");
+        int m=sc.nextInt();
+
+        System.out.println("Y coordinate");
+        int t=sc.nextInt();
+
+        System.out.println("Z coordinate");
+        int o=sc.nextInt();
+
+        System.out.println("Number of array elements");
+        int n = sc.nextInt();
+
+        char input[] = new char[n];
+
+        System.out.println("Enter elements(in lower case from {u,d,l,r,f,b})");
+        // taking input in array
+        for (int i = 0; i < n; i++) {
+            input[i] = sc.next().charAt(0);
+        }
+
+        System.out.println("Give starting direction in lower case");
+        char p = sc.next().charAt(0);// starting direction
+
+
         numberOfTestCases--;
         }
 }
