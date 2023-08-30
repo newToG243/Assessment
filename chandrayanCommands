@@ -46,6 +46,22 @@ public static void main(String[] args) {
         System.out.println("Give starting direction in lower case");
         char p = sc.next().charAt(0);// starting direction
 
+       // we will consider direction as number
+        // for N-0,E-1,S-2,W-3
+        int direction[] = { 0, 1, 2, 3 };
+        // we will consider U-4,D-5
+
+        // converting starting direction into number d
+        int d = 0;
+        
+            if (p == 'n')
+                d = 0;
+            else if (p == 'e')
+                d = 1;
+            else if (p == 'w')
+                d = 2;
+            else if (p == 's')
+                d = 3;
 
         numberOfTestCases--;
         }
