@@ -1,3 +1,20 @@
+/* passed test cases
+r,r,r,r
+d,d,d,d
+l,l,l,l
+r
+l
+d
+u
+f
+b
+f,r,u,b,l
+*/ 
+
+// time complexity:o(n);
+// space complexity:o(1);
+// (for returning ans array is used!)
+
 import java.util.Scanner;
 
 //make pos to store (x,y,z)
