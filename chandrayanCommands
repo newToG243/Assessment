@@ -18,13 +18,76 @@ class chandrayanCommands{
    for(int i=0;i<n;i++){
    char c = input[i];
 
- if (c == 'f') {}
- else if (c == 'b'){}
- else if (c == 'l') {}
-  else if (c == 'r') {}
-else if (c == 'u') {}
+ if (c == 'f') {
+if (d == 0) {
+                    start.y++;
+                } else if (d == 1) {
+                    start.x++;
+                } else if (d == 2) {
+                    start.y++;
+                } else if (d == 3) {
+                    start.x--;
+                } else if (d == 4) {
+                    start.z++;
+                } else if (d == 5) {
+                    start.z--;
+                }
+ }
+ else if (c == 'b'){if (d == 0) {
+                    start.y--;
+                } else if (d == 1) {
+                    start.x--;
+                } else if (d == 2) {
+                    start.y--;
+                } else if (d == 3) {
+                    start.x++;
+                } else if (d == 4) {
+                    start.z--;
+                } else if (d == 5) {
+                    start.z++;
+                }
+ }
+ else if (c == 'l') {
+if (d < 4) {
+                    if (d < 0) {
+                        // Handle negative indices by wrapping around
+                        d = (d +4)% 4;
+                        d = direction[d];
+                    } else {
+                        d = (d - 1+4) % 4 ;
+                        d = direction[d];
+                    }
+                } else {
+                    if (d == 4) {
+                        d = 0;// point towards north
+                    } else if (d == 5) {
+                        d = 2;// point towards south
+                    }
+                }
+ }
+  else if (c == 'r') {
+if (d < 4) {
+                    if (d < 0) {
+                        // Handle negative indices by wrapping around
+                        d = (d + 4)%4;
+                        d = direction[d];
+                    } else {
+                        d = (d + 1)%4;
+                        d = direction[d];
+                    }
+                } else {
+                    if (d == 4) {
+                        d = 2;//point towards south
+                    } else if (d == 5) {
+                        d = 0;//point towards north
+                    }
+                }
+  }
+else if (c == 'u') {
+ d=4; 
+}
  else if (c == 'd') {}
-
+d=5;  
 }
 public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
