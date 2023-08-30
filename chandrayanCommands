@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Pos {
     int x;//X coordinate
     int y;//Y coordinate
@@ -9,4 +11,16 @@ class Pos {
         z = k;
     }
 
+}
+class chandrayanCommands{
+public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("How many test cases you want to run?...");
+        int numberOfTestCases=sc.nextInt();
+
+        while(numberOfTestCases>0){
+        numberOfTestCases--;
+        }
+}
 }
