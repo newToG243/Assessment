@@ -190,11 +190,11 @@ class chandrayanCommands {
                 d = 3;
        
 
-        // for printing answer
+        // for printing answer(we can also update the coordinate which we consider as start,but for clarity  i m using array)
         int ans[] = findDirectionAndPosition(input, n, d, direction,m,t,o);
-        System.out.println("x" + " " + ans[0]);
-        System.out.println("Y" + " " + ans[1]);
-        System.out.println("Z" + " " + ans[2]);
+        System.out.println("final x coordinate" + " " + ans[0]);
+        System.out.println("final Y coordinate" + " " + ans[1]);
+        System.out.println("final z coordinate" + " " + ans[2]);
        
         //finalDirection-number:N-0,E-1,S-2,W-3,U-4,D-5
         System.out.println("Direction" + " " + ans[3]);
