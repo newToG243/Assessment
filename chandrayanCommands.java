@@ -87,40 +87,24 @@ class chandrayanCommands {
            */
             else if (c == 'l') {
                 if (d < 4) {
-                    if (d < 0) {
-                        // Handle negative indices by wrapping around
-                        d = (d +4)% 4;
-                        d = direction[d];
-                    } else {
                         d = (d - 1+4) % 4 ;
-                        d = direction[d];
-                    }
-                } else {
-                    if (d == 4) {
+                } else if(d==4) {
                         d = 0;// point towards north
-                    } else if (d == 5) {
+                } else if (d == 5) {
                         d = 2;// point towards south
-                    }
-                }
+                }                
             }
 
             else if (c == 'r') {
                 if (d < 4) {
-                    if (d < 0) {
-                        // Handle negative indices by wrapping around
-                        d = (d + 4)%4;
-                        d = direction[d];
-                    } else {
                         d = (d + 1)%4;
-                        d = direction[d];
-                    }
-                } else {
-                    if (d == 4) {
-                        d = 2;//point towards south
-                    } else if (d == 5) {
-                        d = 0;//point towards north
-                    }
                 }
+                } else if (d == 4) {
+                        d = 2;//point towards south
+                } else if (d == 5) {
+                        d = 0;//point towards north
+                }
+                
             } else if (c == 'u') {
                 d=4;               
             } else if (c == 'd') {
