@@ -1,0 +1,12 @@
+class Pos {
+    int x;//X coordinate
+    int y;//Y coordinate
+    int z;//Z coordinate
+
+    Pos(int i, int j, int k) {
+        x = i;
+        y = j;
+        z = k;
+    }
+
+}
