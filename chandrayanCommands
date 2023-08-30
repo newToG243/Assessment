@@ -13,7 +13,19 @@ class Pos {
 
 }
 class chandrayanCommands{
- static int[] findDirectionAndPosition(char input[], int n, int d, int[] direction,int m,int t,int o) {}
+ static int[] findDirectionAndPosition(char input[], int n, int d, int[] direction,int m,int t,int o) {
+   Pos start = new Pos(m, t, o);
+   for(int i=0;i<n;i++){
+   char c = input[i];
+
+ if (c == 'f') {}
+ else if (c == 'b'){}
+ else if (c == 'l') {}
+  else if (c == 'r') {}
+else if (c == 'u') {}
+ else if (c == 'd') {}
+
+}
 public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
