@@ -86,8 +86,18 @@ if (d < 4) {
 else if (c == 'u') {
  d=4; 
 }
- else if (c == 'd') {}
-d=5;  
+ else if (c == 'd') {
+d=5;
+ }
+// for returning answer we will make array to store (x,y,z,final direction)
+        int arr[] = new int[4];
+        arr[0] = start.x;
+        arr[1] = start.y;
+        arr[2] = start.z;
+        arr[3] = d;
+
+        return arr;
+  
 }
 public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
