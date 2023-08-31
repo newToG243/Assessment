@@ -99,7 +99,7 @@ class chandrayanCommands {
                 if (d < 4) {
                         d = (d + 1)%4;
                 }
-                } else if (d == 4) {
+                 else if (d == 4) {
                         d = 2;//point towards south
                 } else if (d == 5) {
                         d = 0;//point towards north
